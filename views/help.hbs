@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Server Help Page</title>
+</head>
+<body>
+    {{> header }}
+
+    <p>This is my very first help page!  I am so happy!</p>
+
+    <form>
+        <div><label>Customer name: <input></label></div>
+        <fieldset>
+            <legend> Pizza Size </legend>
+            <div><label> <input type=radio name=size> Small </label></div>
+            <div><label> <input type=radio name=size> Medium </label></div>
+            <div><label> <input type=radio name=size> Large </label></div>
+        </fieldset>
+        <fieldset>
+            <legend> Pizza Toppings </legend>
+            <div><label> <input type=checkbox> Bacon </label></div>
+            <div><label> <input type=checkbox> Extra Cheese </label></div>
+            <div><label> <input type=checkbox> Onion </label></div>
+            <div><label> <input type=checkbox> Mushroom </label></div>
+        </fieldset>
+
+    </form>
+
+    {{> footer }}
+
+</body>
+</html>

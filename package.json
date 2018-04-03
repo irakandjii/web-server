@@ -1,0 +1,14 @@
+{
+  "name": "web-server",
+  "version": "0.0.0",
+  "description": "web-server",
+  "main": "server.js",
+  "author": {
+    "name": "RICHARD"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "hbs": "^4.0.1"
+  }
+}

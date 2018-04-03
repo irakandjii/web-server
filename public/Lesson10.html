@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lesson 10 - Creating Forms</title>
+</head>
+<body>
+
+<h1>Creating Forms</h1>
+<form method="post" action="form.aspx">
+    <p>
+        <label>Customer name: <input type="text" id="customerName" name="customerName" maxlength="10"/></label>
+    </p>
+    <fieldset>
+        <legend>Pizza Size</legend>
+        <p> <label>Small: <input type="radio" name="size" value="small" /> small(10 inch) </label></p>
+        <p><label>Medium: <input type="radio" name="size" value="medium" checked /> medium(12 inch) </label></p>
+        <p><label>Large: <input type="radio" name="size" value="large" /> large(14 inch) </label></p>
+    </fieldset>
+    <fieldset>
+        <legend>Toppings</legend>
+        <p><label>Double Cheese <input type="checkbox" name="toppings" value="dblchese" /></label></p>
+        <p><label>Pepperoni <input type="checkbox" name="toppings" value="pepperoni" /></label></p>
+        <p><label>Bacon <input type="checkbox" name="toppings" value="bacon" /></label></p>
+        <p><label>Salami <input type="checkbox" name="toppings" value="salami" /></label></p>
+        <p><label>Ham <input type="checkbox" name="toppings" value="ham" /></label></p>
+    </fieldset>
+    <p>
+        <select name="crust" multiple>
+            <option value="normal">Normal</option>
+            <option value="thin" selected>New York Thin</option>
+            <option value="thick">Chicago Deep Dish (+2$)</option>
+        </select>
+    </p>
+    <p><label>Delivery Instructions:
+           <textarea name="comments" cols="50" rows="5" maxlength="1000">How do we get to your house?</textarea>
+        </label>
+
+    </p>
+<p><input type="submit" name="submitOrder" value="Continue to Step 2" /></p>
+    <p><input type="reset" name="reset" value="Reset Values" />
+
+    </p>
+</form>
+
+
+</body>
+</html>

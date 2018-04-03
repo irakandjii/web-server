@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lesson 11 - Form Validation and other Future HTML5 Form Enhancements</title>
+  <style type="text/css" media="all">
+    span {
+      width: 175px;
+      display:block;
+      float:left;
+    }
+    input {
+      float:left;
+    }
+    p {
+      padding-top:10px;
+      clear: all;
+    }
+    h2 {
+      padding-top:20px;
+      clear: all;
+    }
+    label {
+      padding-right:20px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Creating Forms</h1>
+<form method="POST" action="form.aspx">
+
+    <h2>Email</h2>
+    <p><label><span>Email Input:  </span><input type="email" name="emailInput" required /></label></p>
+    <h2>Telephone</h2>
+    <p><label><span>Telephone Input:  </span><input type="tel" name="telephone" required /></label></p>
+    <h2>Web Address</h2>
+    <p><label><span>URL Input:  </span><input type="url" name="urlInput" required /></label></p>
+    <h2>Numeric Values</h2>
+    <p><label><span>Number Input: <input type="number" name="n1" value="0" required /></span></label></p>
+    <h2>Range Input</h2>
+    <p><label><span>Ranged Input:  <input type="range" min="50" max="250" name="range" value="55" /></span></label>Range values, min 50 max 250</p>
+    <h2>Data List</h2>
+    <p>
+        <label>
+            <span>Data List  <input type="text" list="someList"></span>
+            <datalist id="someList">
+                <option label="First" value="1"></option>
+                <option label="Second" value="2"></option>
+                <option label="Third" value="3"></option>
+            </datalist>
+        </label>
+    </p>
+    <h2>Autofocus</h2>
+    <p><label><span>autofocus:  <input type="text" autofocus></span></label></p>
+    <p><label><span>pattern:  <input type="text" pattern="^\d{5) (-\d{4})?$"></span> Hint: use a valid zip</label></p>
+    <p><label><span>placeholder:  <input type="text" placeholder="Hello World!" name="n21" /></span></label></p>
+    <p><label><span>required:  <input type="text" placeholder="Required" name="n22" required/></span></label></p>
+    <p><label><span>step:  <input type="number" placeholder="15" name="n23" step="5"/></span>Hint: must be divisible by 5</label></p>
+
+
+
+    <p><button>Submit</button></p>
+
+</form>
+
+</body>
+</html>
